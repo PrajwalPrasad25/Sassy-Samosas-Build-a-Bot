@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Visualiser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>3D Model Visualiser</h1>
+        
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="meshFile" name="meshFile" accept=".obj, .stl, .ply" required>
+            <button type="submit">Upload & View</button>
+        </form>
+        
+        
+        <p id="status"></p>
+
+        <!-- Circular Progress Bar -->
+        <div id="loadingContainer">
+            <div class="circular-progress">
+                <span id="progressText">0%</span>
+            </div>
+            <img id="samosaSpinner" src="{{ url_for('static', filename='images/samosa.jpg') }}">
+        </div>
+
+        <!-- Robotics Animation -->
+        <div id="robotContainer">
+            <img id="robotImage" src="{{ url_for('static', filename='images/robot.jpg') }}">
+            <p>Wall-E is processing your model...</p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

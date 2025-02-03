@@ -1,0 +1,114 @@
+/* Dark Mode Background */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Aquire', sans-serif;
+    text-align: center;
+}
+
+/* Custom Font */
+@font-face {
+    font-family: 'Aquire';
+    src: url('../fonts/AquireLight-YzE0o.otf') format('opentype');
+}
+
+/* Main Container */
+.container {
+    margin-top: 50px;
+}
+
+/* Heading */
+h1 {
+    font-size: 2rem;
+    color: #E69C24; /* Samosa color */
+}
+
+/* File Input & Upload Button */
+input[type="file"] {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+}
+
+button {
+    background: #E69C24; /* Samosa color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #c37e12;
+}
+
+/* Circular Progress Bar */
+#loadingContainer {
+    display: none;
+    margin-top: 20px;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 20px auto;
+}
+
+/* Circular Progress */
+.circular-progress {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: conic-gradient(#E69C24 0deg, #444 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#progressText {
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Samosa Image */
+#samosaSpinner {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Spinning Animation */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Robotics Animation */
+#robotContainer {
+    margin-top: 30px;
+    display: none;
+    text-align: center;
+}
+
+#robotImage {
+    width: 100px;
+    animation: bounce 1.5s infinite alternate ease-in-out;
+}
+
+/* Bouncing Animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+
