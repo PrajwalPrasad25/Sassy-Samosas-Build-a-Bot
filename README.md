@@ -17,3 +17,5 @@ This is the repository for the Senior Problem statement of Build-A-Bot 2.0 of Pa
 1. CodeFile.ino - File containing codes to drive the servo motors and capture depth data from the ToF sensor <br>
 2. test.py - File to read data from serial monitor and write to a csv file <br>
 
+### Drive Link containing the visuals of the project
+https://drive.google.com/drive/folders/1j751zQ_TMDxlf-sAFE4ER19XNdLMLdK1?usp=sharing
