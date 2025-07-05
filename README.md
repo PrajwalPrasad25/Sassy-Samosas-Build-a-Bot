@@ -31,4 +31,4 @@ https://drive.google.com/drive/folders/1MiDCNzK-_Yx1yznZclDlqzyDPRkQbYrt?usp=sha
 
 ### Additional Comments
 The objective of the project was to prioritize time over accuracy, with the target of 3 minutes to scan the object. In accordance with this constraint, we have set a disc rotation of 22.5 degrees for every sweep of the robotic arm. 
-The code can be modified and the actuators recalibrated to set the disc rotation at a lower angle(say, 2 degrees) to capture more data, and subsequently, a more acccurate scan.
+The code can be modified and the actuators recalibrated to set the disc rotation at a lower angle(say, 2 degrees) to capture more data, and subsequently, a more accurate scan.
